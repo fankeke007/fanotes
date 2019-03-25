@@ -10,11 +10,13 @@
     #
     cd folderPath
 
-    #重定向
+    #重定向 （>、>>、<）
     ls > 001.txt  #输出当前路径文件列表到001.txt（若存在001.txt则会覆盖）
     ls >> 001.txt  #与上一条不同点，不会覆盖而是追加
+    python spam.py < 001.txt  #将001.txt的内容作为输入源给spam.py使用
 
-    #
+    #管道 （|）
+    ls | sort -Descending Name  #将前一个操作的结果作为输入源给到下一个操作
 
 
 #### 2.类型？
